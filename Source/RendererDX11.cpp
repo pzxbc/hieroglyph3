@@ -1304,12 +1304,12 @@ ResourcePtr RendererDX11::LoadTexture( std::wstring filename, bool sRGB )
 			m_pDevice.Get(),
 			pImmPipeline->m_pContext.Get(),
 			filename.c_str(),
-			0,
+			(size_t)0,
 			D3D11_USAGE_DEFAULT,
 			D3D11_BIND_SHADER_RESOURCE,
 			0,
 			0,
-			sRGB,
+			DirectX::WIC_LOADER_SRGB_DEFAULT,
 			pResource.GetAddressOf(),
 			0 );
 	}
