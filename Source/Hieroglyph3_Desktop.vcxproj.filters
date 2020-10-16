@@ -1539,7 +1539,6 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="..\Include\AnimationStream.inl">
       <Filter>Animation</Filter>
     </None>
@@ -1607,5 +1606,6 @@
     <None Include="..\Include\TStateCache.inl">
       <Filter>Rendering\Resource System\State Objects</Filter>
     </None>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
